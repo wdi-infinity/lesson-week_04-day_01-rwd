@@ -8,7 +8,7 @@ Every selector has its place in the specificity hierarchy, and if two selectors 
 
 <img src="https://css-tricks.com/wp-content/csstricks-uploads/specificity-calculationbase.png" />
 
-###Calculating specificity
+### Calculating specificity
 
 <img src='https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-1.png' />
 
