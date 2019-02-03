@@ -86,7 +86,8 @@ main .column {
   min-width: 320px;
 }
 
-@media only screen and (max-width: 960px) {
+
+@media only screen and (max-width: 960px) { /* poplur resolution for laptop */
   main .column {
     width: 50%;
   }
@@ -98,8 +99,8 @@ main .column {
     display: none;
   }
 
-  header nav > ul > li:nth-child(1),
-  header nav > ul > li:nth-child(4) {
+  header nav > ul > li:nth-child(1), /* we can choose first-child */
+  header nav > ul > li:nth-child(4) { /* we can choose last-child */
     display: block;
   }
 
@@ -109,7 +110,8 @@ main .column {
   }
 }
 
-@media only screen and (max-width: 640px) {
+
+@media only screen and (max-width: 640px) { /* poplur resolution for small device */
   main .column {
     width: 100%;
   }
@@ -122,22 +124,41 @@ main .column {
     font-size: 30px;
   }
 
-  header nav > ul > li:nth-child(4) ul li:nth-child(1) {
+  header nav > ul > li:nth-child(4) ul li:nth-child(1) { /* the li inside ul and the ul is under the first li */
     float: right;
     display: block;
   }
 
-  header nav > ul > li:nth-child(4) ul li:nth-child(1) a:before {
+  header nav > ul > li:nth-child(4) ul li:nth-child(1) a:before { /* before is to insert before (a)  */
     content:'\2630';
     font-size: 16px;
   }
 
-  header nav > ul > li:nth-child(4) ul li{
+  header nav > ul > li:nth-child(4) ul li{ /* to make the nav invisible */
     display: none;
   }
 }
 
 img{
    max-width: 100%;
-   height:  auto;
+   height:  auto; 
 }
+
+iframe{
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+  height: auto;
+}
+
+td{
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+}
+
