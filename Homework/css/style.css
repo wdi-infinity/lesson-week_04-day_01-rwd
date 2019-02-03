@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;   
+    margin: 0px;  
+    padding: 0px;  
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+  }
+  header, main {
+    max-width: 960px; /* max width for all element in page*/
+    margin: 0 auto;
+    position: relative;
+  }
+  /* HEADER */
+  header nav ul li {
+    overflow: hidden;
+  }
+  header nav > ul > li:nth-child(1) h1 {
+    color: rgb(242, 138, 40);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 88px;
+  }
+  header nav > ul > li:nth-child(2) {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 23px;
+    line-height: 35px;
+    color: #ffc719;
+    background: black;
+  }
+  header nav > ul > li:nth-child(3) span {
+    color: #ff0044;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 25px;
+    display: inline-block;
+  }
+  header nav > ul > li:nth-child(4) {
+    background: rgb(241, 241, 241);
+    margin-bottom: 15px;
+  }
+  header nav > ul > li:nth-child(4) ul li {
+    display: inline;
+  }
+  header nav > ul > li:nth-child(4) a {
+    padding: 15px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+  }
+  header nav > ul > li:nth-child(4) a:hover {
+    background: #ffc000;
+  }
+  /* MAIN COLUMNS */
+  main .column h2 {
+    padding: 15px;
+    color: white;
+  }
+  main .column:nth-child(1) h2 { background: rgb(126, 211, 33);}
+  main .column:nth-child(2) h2 { background: rgb(235, 91, 76); }
+  main .column:nth-child(3) h2 { background: rgb(0, 174, 255); }
+  main .column p {
+    padding: 15px;
+  }
+
+                                                                  /* Homework */
+/* select all class column */
+  main .column {
+    float: left;
+    width: 33.33%;
+    min-width:320px; /* minimum width */
+  }
+                                                              /* Media queries */
+  
+  @media only screen and ( max-width: 960px){
+   /* select all column class and change width */
+    main .column {
+        width: 50%;
+      }
+      /* change width of last child */
+      main .column:last-child {
+        width: 100%;
+      }
+      /*change first list li depending on the browser size */
+     header nav > ul > li:nth-child(1){
+       text-align: center;
+       padding: 30px 0;
+       
+     }
+     /* change h1 font size depending on the browser size */
+     header nav > ul > li:nth-child(1) > h1{
+      font-size: 40px;
+     }
+  }
+                                                           /* Media queries */
+                                                          
+  @media only screen and (max-width: 640px) {
+     /* select all column class and change width depending on the browser size (640 as max)*/
+    main .column {
+      width: 100%;
+    }
+    /*change first list li depending on the browser size (640 as max) */
+    header nav > ul > li:nth-child(1) {
+      text-align: center;
+      padding: 15px 0;
+    }
+
+  /* change h1 font size depending on the browser size */
+    header nav > ul > li:nth-child(1) > h1 {
+      font-size: 30px;
+    }
+  /* change hamburger menu in the fourth list first element*/
+    header nav > ul > li:nth-child(4) ul li:nth-child(1)
+    {
+      float: right;
+      display: block;/* to make first list -block- not in the same line with other list*/
+    }
+  /* add a burger icon before a element */
+    header nav > ul > li:nth-child(4) ul li:nth-child(1) a::before{
+      content: '\2630'; /* add hamburger menu icon*/
+    } 
+
+   /* all list except first list (cause it is block item so will be shown:)) */
+    header nav > ul > li:nth-child(4) > ul > li {
+      display: none;/* all list except first list will not appear */
+    }
+  }
+
+  /*the image inside the last column so it takes same width of last column*/
+  img {
+     width: 100%;
+  }
+  
