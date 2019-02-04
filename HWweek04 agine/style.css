@@ -1,0 +1,41 @@
+body{
+    background: papayawhip;
+  }
+  
+
+ @media (max-width: 1000px){
+    body{
+      background:green ;
+    }
+  }
+
+  @media (max-width: 800px){
+    body{
+      background: yellow;
+    }
+  }
+ 
+
+  @media (max-width: 600px){
+    body{
+      background: red;
+    }
+  }
+
+  @media (max-width: 1000px) and (min-height:400px){
+    body{
+      background: turquoise ;
+    }
+  }
+
+  @media (max-width: 800px) and (min-height:400px){
+    body{
+      background: green ;
+    }
+  }
+
+  @media (max-width: 600px) and (min-height:400px){
+    body{
+      background: purple ;
+    }
+  }
