@@ -70,6 +70,7 @@ header nav > ul > li:nth-child(4) a:hover {
 main .column h2 {
   padding: 15px;
   color: white;
+  /*display: inline;*/
 }
 
 main .column:nth-child(1) h2 { background: rgb(126, 211, 33);}
@@ -86,15 +87,32 @@ main .column  {
   width: 100%;
 
 }
-
+ul #mainheader{
+  padding: 30px;
+}
 
 }
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:650px){
   main .column  {
     width: 100%;
   }
-ul li .mainheader{
-  font-size: 50px;
+ul #mainheader{
+  font-size: 30px;
   
-}}
+}
+p{
+  display: inline;
+}
+
+#li2{
+
+display: none;
+}
+
+/* 
+#ul1{
+  display: inline;
+}*/
+
+}
