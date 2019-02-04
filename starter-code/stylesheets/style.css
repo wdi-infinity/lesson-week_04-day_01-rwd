@@ -143,11 +143,6 @@ main .column {
   header nav ul li:nth-child(4) ul li {
     display: none;
     /* background: red; */
-  }
-  ul li ul li {
-    /* background: red; */
-    /* display: none; */
-    /* Why display not working here */
     text-align: center;
     clear: both;
   }
