@@ -1,16 +1,17 @@
 * {
-  box-sizing: border-box;   
-  margin: 0px;  
-  padding: 0px;  
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: black;
 }
 
-header, main {
-  width: 960px;
+header,
+main {
+  max-width: 960px;
   margin: 0 auto;
   position: relative;
 }
@@ -72,10 +73,74 @@ main .column h2 {
   color: white;
 }
 
-main .column:nth-child(1) h2 { background: rgb(126, 211, 33);}
-main .column:nth-child(2) h2 { background: rgb(235, 91, 76); }
-main .column:nth-child(3) h2 { background: rgb(0, 174, 255); }
+main .column:nth-child(1) h2 {
+  background: rgb(126, 211, 33);
+}
+main .column:nth-child(2) h2 {
+  background: rgb(235, 91, 76);
+}
+main .column:nth-child(3) h2 {
+  background: rgb(0, 174, 255);
+}
 
 main .column p {
   padding: 15px;
+}
+
+main .column {
+  float: left;
+  width: 33.33%;
+  min-width: 320px;
+}
+
+@media only screen and (max-width: 960px) {
+  main .column {
+    width: 50%;
+  }
+  main .column:last-child {
+    width: 100%;
+  }
+
+  header nav > ul > li:nth-child(1) {
+    text-align: center;
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  main .column {
+    width: 100%;
+  }
+
+  header nav > ul > li:nth-child(1) h1 {
+    font-size: 30px;
+  }
+
+  header nav > ul > li:nth-child(1) h1 {
+    padding: 15px 0;
+  }
+
+  header nav > ul > li:nth-child(4) ul li:nth-child(1) {
+    float: right;
+    display: block;
+  }
+
+  header nav > ul > li:nth-child(4) ul li:nth-child(1) a:before {
+    content: "\2630";
+    font-size: 16px;
+  }
+
+  header nav > ul > li:nth-child(4) ul li {
+    display: none;
+  }
+
+  header nav > ul > li:nth-child(1),
+  header nav > ul > li:nth-child(4) {
+    display: block;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
